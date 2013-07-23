@@ -1,0 +1,5 @@
+gradle.beforeProject { prj ->
+    def checkOutDir = "CHECKOUTPATH"
+    prj.apply from:
+    "file:///${checkOutDir}/installation/apply-local.groovy"
+}
